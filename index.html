@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bow Arrow Game 🎯</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+
+    <!-- Player Name Screen -->
+    <div id="nameScreen">
+      <h1>Bow Arrow Game 🎯</h1>
+      <p>Enter your name to start:</p>
+      <input type="text" id="playerNameInput" placeholder="Your Name"/>
+      <button id="startGameBtn">Start Game</button>
+    </div>
+
+    <!-- Game HUD -->
+    <div id="gameHUD" style="display:none;">
+      <h1>Bow Arrow Game 🎯</h1>
+      <div id="score">Score: 0 | Level: 1 | ❤️❤️❤️</div>
+      <div id="highScore">High Score: 0</div>
+
+      <!-- Canvas -->
+      <canvas id="gameCanvas"></canvas>
+
+      <!-- Game Over Overlay -->
+      <div id="gameOverScreen">
+        <h2>GAME OVER</h2>
+        <p id="finalScore"></p>
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard"></ul>
+        <button id="playAgainBtn">Play Again</button>
+        <button id="newPlayerBtn">New Player</button>
+      </div>
+
+      <!-- Sounds -->
+      <audio id="shootSound" src="shoot.mp3"></audio>
+      <audio id="hitSound" src="hit.mp3"></audio>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
